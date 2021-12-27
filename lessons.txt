@@ -21,3 +21,8 @@ Creating a module:
 'logger.js'
 
 
+Loading module
+
+const x = require('./module-name.js) 
+     or
+import './module-name';
