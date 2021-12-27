@@ -1,4 +1,4 @@
-Node Modules:
+--Node Modules:
 
 When we define a function it goes to the global scope
 
@@ -17,12 +17,42 @@ every file is a module, and the variables and functions
 defined and in that file are a scope to that module, they are not available
 
 
-Creating a module:
+--Creating a module:
 'logger.js'
 
 
-Loading module
+--Loading module:
 
 const x = require('./module-name.js) 
      or
 import './module-name';
+
+
+--Node wrapper:
+
+node does not execute our code directly. The way is something like this:
+
+Module Wrapper Function:
+
+(function(exports, require, module, __filename, __dirname) {
+
+})
+
+REQUIRE function is the easiest way to include modules that exist in separate files
+
+   'module.exports.object = func/const;'
+       or
+   'exports.object = func/log;'
+
+
+
+--Path Module
+
+built in modules node:
+https://nodejs.org/dist/latest-v16.x/docs/api/
+
+we gonna use this 
+   'path.parse(path)'
+
+it can be accessed using:
+   'const path = require('path');'

@@ -27,5 +27,10 @@ logger.log1('message');
 
 // const logger2 = require('./logger');
 // logger2('breno test')
+
 // // logger2 is not an object because it was exported like 
 // //    module.exports = log2; instead module.exports.log2 = log2;
+
+console.log(__filename);
+console.log(__dirname);
+// default in node wrapper
