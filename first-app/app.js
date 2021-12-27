@@ -3,6 +3,8 @@ function sayHello(name) {
 }
 
 sayHello('Breno');
+// sayHello(window);
+
 
 // in the terminal 
 // node app.js 
