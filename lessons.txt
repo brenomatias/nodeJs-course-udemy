@@ -1,0 +1,23 @@
+Node Modules:
+
+When we define a function it goes to the global scope
+
+we should avoid defining variables and functions
+in the global scope. Instead we need modularity we need to
+create small building blocks or modules where we define
+our variables and functions.
+
+every file in a Node application is considered a
+module. The variables and functions defined in that function or
+module are a scope to that file. 
+
+
+So in Node,
+every file is a module, and the variables and functions
+defined and in that file are a scope to that module, they are not available
+
+
+Creating a module:
+'logger.js'
+
+

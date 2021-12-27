@@ -5,6 +5,8 @@ function sayHello(name) {
 sayHello('Breno');
 // sayHello(window);
 
+console.log(module);
+
 
 // in the terminal 
 // node app.js 
