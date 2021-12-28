@@ -1,0 +1,31 @@
+RESTful web services
+
+    are built to work best on the Web. Representational State Transfer (REST) is an architectural style that specifies constraints, such as the uniform interface, that if applied to a web service induce desirable properties, such as performance, scalability, and modifiability, that enable services to work best on the Web. In the REST architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs), typically links on the Web. The resources are acted upon by using a set of simple, well-defined operations. The REST architectural style constrains an architecture to a client/server architecture and is designed to use a stateless communication protocol, typically HTTP. In the REST architecture style, clients and servers exchange representations of resources by using a standardized interface and protocol.[(talk between the host and the server)]
+
+    CRUD (Create, read, update and delete) through protocols
+
+
+---------
+
+ On the server, we should expose a service and an endpoint like this.
+  'http(s)://vidly.com/api/customers'
+
+the client can send http requests to this endpoint to our service
+
+---An HTTP request is made by a client, to a named host, which is located on a server. The aim of the request is to access a resource on the server. To make the request, the client uses components of a URL (Uniform Resource Locator), which includes the information needed to access the resource.
+
+
+----The type of the http request determines the kind of
+operation. So every http request has what we call
+a verb or a method that determines its type of intention
+here are the standard http methods::
+
+    GET or getting data, 
+    POST, or creating data.
+    PUT for updating data, 
+    DELETE, for deleting data.
+
+
+
+    -----------
+EXPRESS FRAMEWORK
