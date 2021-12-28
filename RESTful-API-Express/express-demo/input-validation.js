@@ -1,7 +1,7 @@
 // joi
 // The most powerful schema description language and data validator for JavaScript.
 
-const Joi = require('joi'); // Class import joi
+const Joi = require('@hapi/joi'); // Class import joi
 const express = require('express');
 const app = express(); // (object)
 
@@ -24,15 +24,11 @@ app.get('/api/courses', (req, res) => {
 });
 
 
-
-
 app.post('/api/courses', (req, res) => { 
     //  A schema defines the shape of our objects
-    const schema = {
-        name: Joi.string().min(3).required()
-    }
-    
-    const result = Joi.validate(req.body, schema);
+    const schema = Joi.object({name: Joi.string().min(3).require()})
+
+    const result = schema.validate(req.body); 
     console.log(result);
 
 
@@ -51,20 +47,3 @@ app.post('/api/courses', (req, res) => {
 });
 
 
-
-
-// implement a new route
-app.get('/api/courses/:id', (req, res) => {
-  const course = courses.find(carac => carac.id === parseInt(req.params.id));
-  if (!course) res.status(404).send('The course with the given id was not found')//404
-  res.send(course)
-})
-
-
-
-
-const port = process.env.PORT4 || 3000;
-
-app.listen(port, () => console.log(`Listening on port ${port}`));
-// ON TERMINAL 'export PORT=portValue' -> define localhost port
-// nodemon module.js
