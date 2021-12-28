@@ -44,14 +44,14 @@ const emitter = new EventEmitter
 // emitter.on('name-of-event', 'call-back-fucntion'(){
 
 // })
-emitter.on('messageLogged', function(){
-    console.log('Listener called')
+emitter.on('messageLogged', (arg) => {
+    console.log('Listener called',arg)
  });
  
 
 // raise an event 
 // emitter.methods('name of event')
-emitter.emit('messageLogged');
+emitter.emit('messageLogged', { id:1, url: 'http://'});
 
 
 
@@ -61,3 +61,5 @@ emitter.emit('messageLogged');
 // listener AFTER calling the emit method, nothing would have
 // happened. Because when we call the emit method, this emitter
 // iterates over all the registered listeners and calls them synchronous
+
+// Raise: loggin (data:message)
