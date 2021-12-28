@@ -1,5 +1,8 @@
 npm is a package manager for the JavaScript programming language maintained by npm, Inc. npm is the default package manager for the JavaScript runtime environment Node.js
 
---- firstnpm 
+--- starting node projects
      npm init 
      npm init --yes
+
+-- npm i underscore -> third party package in https://www.npmjs.com/package/underscore
+ package-lock.json
