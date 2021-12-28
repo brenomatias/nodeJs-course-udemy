@@ -6,3 +6,8 @@ npm is a package manager for the JavaScript programming language maintained by n
 
 -- npm i underscore -> third party package in https://www.npmjs.com/package/underscore
  package-lock.json
+
+
+--- Why we dont nedd to export node_modules?
+Because the dependencies orientation in package.json donwload 
+the modules(packages/third packages when run npm ---intall)
