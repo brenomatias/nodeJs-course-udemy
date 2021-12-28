@@ -29,3 +29,5 @@ here are the standard http methods::
 
     -----------
 EXPRESS FRAMEWORK
+
+------- npm i nodemon

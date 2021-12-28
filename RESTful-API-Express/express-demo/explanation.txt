@@ -1,0 +1,22 @@
+always git init
+npm i express
+
+
+--------ENVIROMENT VARIABLES
+
+
+One thing we need to improve in this code
+is this hard coded value for the ports. So we have
+used 3000 as an arbitrary number, why this may work
+on your development machine, it's unlikely it's going to work in the production environment. Because when you deploy this this application to a hosting environment
+the port is dynamically assigned by the hosting environment,
+so we can't rely on 3000 to be available,
+so, the way to fix this is by using an environment variable.
+So typically in hosting environments for node applications,
+we have this environment variable called ports.
+An environment variable is basically a variable that is part of the environment in which a process runs. Its value is set
+outside this application
+
+--- Simply put, a production environment is where the latest versions of software, products, or updates are pushed live to the intended users. Think of it as a final phase of production. This is the environment where the end user can see, experience, and interact with the new product.
+
+--- The hosting environment is the physical environment where hosting services are offered from. Typically hosting environment in telecommunication terms would be a Network Operating Centre (NOC) housing the equipment needed to host a service. In simple words, the Hosting Environment mainly consists of two terms.
