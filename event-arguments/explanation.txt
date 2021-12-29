@@ -1,0 +1,10 @@
+Now quite often, when we want
+to raise an event, we also want to send some data about
+that event. For example, in our logger module, when we
+log a message perhaps our remote login service will
+generate an ID for that message, perhaps we want to return that ID
+to the client, or it may give us a URL to
+access the logged message directly. So here, when raising
+an event you can add additional arguments which we refer to
+as event arguments. So we can add an event ID
+like 1, then we can add a url.
