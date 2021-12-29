@@ -1,0 +1,29 @@
+
+// The createServer method creates a server on your computer:
+// The http. createServer() method creates an HTTP Server object. The HTTP Server object can listen to ports on your computer and execute a function, a requestListener, each time a request is made.
+
+
+//What is HTTP server in Nodejs?
+// Node. js has a built-in module called HTTP, which allows Node. js to transfer data over the Hyper Text Transfer Protocol (HTTP). To include the HTTP module, use the require() method: var http = require('http');
+// The http.createServer() method turns your computer into an HTTP server.
+// this class inherits
+// from net.Server
+
+// // use the on method to handle that event.
+// server.on('connection', (actualListener) => {
+//     console.log('New conection')
+
+// });
+
+
+
+--- OTHER ROUTES IN the backend
+ Now if you want to build a backend service for our
+web or mobile applications, we need to handle various routes
+here. For example, we can have another if block
+if request.url = /
+api/courses, perhaps here we want to return
+the list of courses from the database, so we would do
+something like this, reponse.write. Now here we want to
+return an array of objects using json.
+So, we use JSON.

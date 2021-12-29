@@ -56,3 +56,13 @@ we gonna use this
 
 it can be accessed using:
    'const path = require('path');'
+
+
+
+--Events Module
+
+One of the core concepts in Node,
+is the concept of events. In fact a lot of Node's core
+functionality is based on this concept of events.
+An event is basically a signal that indicates that
+something has happened in our application
