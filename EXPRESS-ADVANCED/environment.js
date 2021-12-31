@@ -13,7 +13,7 @@ const morgan = require('morgan');
 process.env.NODE_ENV;
 console.log(`NODE_ENV: ${process.envl.NODE_ENV}`);
 
-app.get('env')         //another way to get the current environment
+app.get('env')         //another way to get(DETECT) the current environment
 
 //process object, this is a global object in Node that gives us access to the current process.
 
