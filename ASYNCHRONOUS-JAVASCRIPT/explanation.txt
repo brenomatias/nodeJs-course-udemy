@@ -7,3 +7,9 @@ One purpose of APIs is to hide the internal details of how a system works, expos
 
 mkdir async-demo
 npm init --yes
+
+
+// Patterns for dealing with async code:
+--- CALLBACK
+--- PROMISES
+--- ASYNC/AWAIT
