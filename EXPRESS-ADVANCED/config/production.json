@@ -1,0 +1,7 @@
+{
+    "name": "Override the name",
+    "mail": { 
+        "property" : "another property ",
+        "host": "prod-mail-server"
+    } 
+}
