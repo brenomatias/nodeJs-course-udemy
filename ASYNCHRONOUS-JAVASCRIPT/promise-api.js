@@ -4,7 +4,7 @@
 //é um conjunto de rotinas e padrões de programação para acesso a um aplicativo de software ou plataforma baseado na Web
 
 // Sometimes you want to create a promise
-// that is already resolved. This is particularly useful when
+// that is ALREADY RESOLVED. This is particularly useful when
 // writing unit tests(UNIT TESTS).
 
 
