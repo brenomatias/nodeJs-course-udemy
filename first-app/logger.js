@@ -3,7 +3,7 @@ var url = 'http://mylogger.io/log';
 // in this implementation we're going to send an http request
 // to this endpoint, to this URL
 
-function log(message) {
+function logTest(message) {
     //send an http request
     console.log(message);
     
@@ -13,7 +13,8 @@ function log(message) {
 // and this log function, they're both scope
 // to this module, they're private, they're not visible from the outside.
 
-module.exports.log = log;
+module.exports.log1 = logTest;
+// desse jeito exporta um objeto
 
 // I'm going to set module.
 // exports.log, so I'm adding a
@@ -32,3 +33,14 @@ module.exports.endPoint = url;
 // in real world applications, every module might have several
 // variables and functions, we only want to export a subset of
 // these members to the outside, because we want to keep this module easy to use.
+
+
+
+// sometimes instead of exporting an OBJECT from a module 
+// you may want to export a single function
+
+// function log2(message) {
+//     console.log(message);
+// }
+
+// module.exports = log2;
