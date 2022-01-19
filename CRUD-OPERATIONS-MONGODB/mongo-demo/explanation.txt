@@ -1,0 +1,25 @@
+First:
+
+   install
+
+      npm i mongoose
+
+Mongoose gives us a simple api to work with a Mongo DB database.
+Connect with database
+
+
+
+Second: 
+
+   create a schema
+
+Third: 
+
+  Now we need to compile this into a model.
+Create class
+
+
+ Once we have a schema,
+we need to compile that into a model, which gives us
+a class, next we can create an object based on that class,
+and this object maps to a document in Mongo DB database

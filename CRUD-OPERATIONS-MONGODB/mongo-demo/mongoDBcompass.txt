@@ -1,0 +1,16 @@
+a collection in MongoDB is like a table in a relational database4The document in MongoDB
+
+The documents is kind of similar to a row in a relational database.
+
+
+So in relational databases, you have tables, and rows,
+in MongoDB we have collections and documents.
+Now let's take a look at this collection.
+
+each document is a container of key value pairs
+
+ in Mongoose we have this concept called schema.
+This is just specific to Mongoose, it's not part of MongoDB.
+We use a schema in Mongoose to define the shape of
+documents in a MongoDB collection. So we use that to define
+what are the properties we have in this document.
