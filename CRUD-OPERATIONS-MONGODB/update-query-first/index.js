@@ -1,6 +1,9 @@
+// This approach is useful, if you receive an input from the client,
+// and you want to make sure that the update is a valid operation
+
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/playground')
+mongoose.connect('mongodb://localhost/mongo-exercises')
 .then(() => console.log('Conected to MongoDB...'))
 .catch(err => console.log('Could not connect to MongoDB'))
 async function updateCourses(id) {
@@ -42,8 +45,3 @@ updateCourses('5a68fde3f09ad7646ddec17e');
 // findById()
 // Modifify its properties
 // save()
-
-
-// Approach: Update First 
-// Update directly
-// Optionally: get the updated document
