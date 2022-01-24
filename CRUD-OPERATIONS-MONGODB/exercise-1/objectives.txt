@@ -1,0 +1,3 @@
+1) write a program and get all the published backend courses
+in our new database, sort them by their name, and pick only their
+name and author properties
