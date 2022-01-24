@@ -1,0 +1,4 @@
+I want you to get all the published frontend and backend courses
+sort them by their price in a descending order, from most expensive
+to least expensive, pick only their name and author,
+and display them on the console.
