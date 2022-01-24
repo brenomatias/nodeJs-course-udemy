@@ -53,4 +53,4 @@ getCourses();
 // OR OPERATOR
 
 // .or([ {}, {}])
-each object {} is a filter
+// each object {} is a filter
