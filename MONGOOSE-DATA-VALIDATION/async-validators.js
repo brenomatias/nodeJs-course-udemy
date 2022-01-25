@@ -21,14 +21,21 @@ const courseSchema = new mongoose.Schema({
     tags: {
         type: Array,
         validate: {
-            validator: function(v){
-                return v && v.lenght > 0;
+            isAsync: true,
+            validator: function(v, callback){
+
+                setTimeout(() => { // simulate an asynchronouoperation
+                    // Do some async work In a real world scenario, that result will be calculated based on the value that you read from the file system or a database or a removed service
+                    const result = v && v.length > 0;
+                    callback(result)
+                }, 1000);
+
             },
             message: 'A course should have at least one tag'
         }
     },
 
-    
+
     date: { type:Date, default: Date.now }, 
     isPublished: Boolean,
     price: {
@@ -63,15 +70,3 @@ async function createCourse() {
     }
 }
 
-
-// Custom validator 
-
-// tags: {
-//     type: Array,
-//     validate: {
-//         validator: function(v){
-//             return v && v.lenght > 0;
-//         },
-//         message: 'A course should have at least one tag'
-//     }
-// },
