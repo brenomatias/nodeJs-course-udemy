@@ -1,0 +1,2 @@
+ get all the published courses that are 15 dollars or more
+or have the word 'by' in their title

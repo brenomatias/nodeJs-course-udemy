@@ -1,0 +1,24 @@
+we use this command to import data: 
+
+    mongoimport --db mongo-exercises --collection courses --drop --file exercise-data.json --jsonArray
+
+
+supply a few flags:
+
+   The first one is --db.
+Where we specify the name of our database. I want you to use a separate database for these exercises. 
+
+So mongo-exercises. 
+
+The next flag is --collection. 
+We set this to courses
+
+another flag that is --file.
+
+And here we pass exercise-data
+.json. So I'm running this command from the same folder
+where I have this json file. And finally the last flag is
+
+--json array, we need this flag
+because the data that we have in this json file is represented using an array as you can see here. So, let's run this command,
+import as 7 documents, now let's open up MongoDB compass
