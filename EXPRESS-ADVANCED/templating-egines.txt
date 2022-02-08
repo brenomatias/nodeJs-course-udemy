@@ -1,0 +1,13 @@
+(motores de modelagem)
+
+In all the endpoints we have implemented
+so far, we return json objects in the response.
+Sometimes however, you need to return html markup to the client.
+
+And that's where we use a templating engine
+
+There are various templating engines available for express applications.
+
+eachtemplating engine has a different syntax for generating dynamic
+html and returning it to the client. So for this demo, I'm going to show you
+https://www.npmjs.com/package/pug 
